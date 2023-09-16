@@ -7,6 +7,7 @@
 
 .topNav{
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: #fff;
     top: 0;
@@ -37,8 +38,10 @@
 }
 
 .bannerimg{
+    position: relative;
     width: 100%;
     text-align: center;
+    z-index: -1;
 }
 .bannerimg p{
     position: absolute;
@@ -49,6 +52,7 @@
     font-size: 34px;
     transform: translate(-50%,-50%);
     letter-spacing: 4px;
+    z-index: 0;
 }
 .bannerimg span{
     background-color: rgba(11, 11, 11, 0.8);
@@ -113,11 +117,14 @@ hr{
 .container4{
     display: flex;
     max-width: 100%;
+    z-index: -1;
 }
 .container4 img{
     filter: grayscale(0.7);
     width: 350px;
     text-align: center;
+    position: relative;
+    z-index: -1;
 }
 .profilecard{
     width: 24.9999%;
